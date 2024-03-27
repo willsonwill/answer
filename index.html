@@ -70,7 +70,7 @@
             },
             methods: {
                 async getRespuesta() {
-                    this.answer = 'Pensando...'
+                    this.answer = '...'
                     const { answer, image } = await fetch('https://yesno.wtf/api').then(r => r.json())
                     this.answer = answer === 'yes' ? '¡Sí!' : '¡No!'
                     this.img = image
